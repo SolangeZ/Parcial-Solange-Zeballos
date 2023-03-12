@@ -1,27 +1,16 @@
-:root {
+ :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  color: rgba(219, 195, 230, 0.87);
+  background-color: #4d4c4c;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+} 
 
 body {
   margin: 0;
@@ -29,16 +18,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  background-color: rgb(255, 255, 0);
 }
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid #2d328f;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -46,6 +31,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+
 }
 button:hover {
   border-color: #646cff;
@@ -55,13 +41,34 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+#formulario{
+  position: relative;
+  width: 30em;
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto;
+  box-shadow: 0 5px 5px rgb(175, 164, 10);
+  padding: 8em 4em;
+  box-sizing: border-box;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background-image: url(./assets/personajeSimpson.jpg);
+  background-size: 100%;
+} 
+
+#error-message{
+  color: rgb(238, 8, 8);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #010f1b;
   }
   a:hover {
-    color: #747bff;
+    color: #0c1285;
   }
   button {
     background-color: #f9f9f9;

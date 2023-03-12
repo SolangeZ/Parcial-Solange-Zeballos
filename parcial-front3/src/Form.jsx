@@ -1,17 +1,17 @@
-import React, {Fragment, useState} from 'react'
+import React, {useState} from 'react'
 import Card from './Card'
 import { Input } from './FormStyles'
 
 const Form = () => {
     const [nombre, setNombre] = useState('')
-    const [color, setColor] = useState('')
+    const [personaje, setPersonaje] = useState('')
     const [validar, setValidar] = useState(false)
     const [card, setCard] = useState(false)
     
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(nombre);
-        console.log(color);
+        console.log(personaje);
 
         let vcaracteres3;
         let vcaracteres6;
@@ -25,7 +25,7 @@ const Form = () => {
             vcaracteres3 = false;
         }
 
-        if (color.length >= 6) {
+        if (personaje.length >= 6) {
             console.log("Es mayor a 6 caracteres");
             vcaracteres6 = true
         }else{
@@ -49,8 +49,8 @@ const Form = () => {
     onChange={(e) => { setNombre(e.target.value)}
     }      
     />
-<Input type={"text"} placeholder={"Ingrese tu personaje de los Simpsons favorito"} value = {color} 
-    onChange={(e) => { setColor(e.target.value)}
+<Input type={"text"} placeholder={"Ingresa tu personaje favorito de los Simpson"} value = {personaje} 
+    onChange={(e) => { setPersonaje(e.target.value)}
     }      
     /> 
     </form>
@@ -59,11 +59,11 @@ const Form = () => {
     </div>
 
     {
-        validar && (<p>Chequear que la informacion sea correcta</p>)
+        validar && (<p id = "error-message">Por favor chequea que la información sea correcta</p>)
     }
 
     {
-        card && (<Card name={nombre} colour={color}/>)  
+        card && (<Card name={nombre} personaje={personaje}/>)  
     } 
     </>
     )
