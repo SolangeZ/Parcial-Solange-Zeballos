@@ -63,6 +63,18 @@ button:focus-visible {
   color: rgb(238, 8, 8);
 }
 
+#card-container{
+  background-color: rgb(8, 7, 7);
+  border-radius:10px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 5px rgb(26, 24, 5);
+  color: #ffffff;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -ms-border-radius:10px;
+  -o-border-radius:10px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #010f1b;
