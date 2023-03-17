@@ -17,19 +17,15 @@ const Form = () => {
         let vcaracteres6;
 
         if (nombre.trim().length >= 3) {
-            console.log("Es mayor a 3 caracteres");
             vcaracteres3 = true
         }
         else{
-            console.log("Es menor a 3 caracteres");
             vcaracteres3 = false;
         }
 
         if (personaje.length >= 6) {
-            console.log("Es mayor a 6 caracteres");
             vcaracteres6 = true
         }else{
-        console.log("Es menor a 6 caracteres");
         vcaracteres6 = false;
     }   
     
@@ -41,7 +37,7 @@ const Form = () => {
     }
 
     }
-//handleSubmit.resetForm(...);
+//handleSubmit.reset.Form(...values);
     return (
     <>
     <form id='formulario' onSubmit={handleSubmit}>
@@ -65,7 +61,7 @@ const Form = () => {
     {
         card && (<Card name={nombre} personaje={personaje}/>)  
     } 
-    </>
+    </> 
     )
 }
 

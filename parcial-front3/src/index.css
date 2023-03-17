@@ -64,7 +64,7 @@ button:focus-visible {
 }
 
 #card-container{
-  background-color: rgb(8, 7, 7);
+  background-color: rgb(0, 0, 0);
   border-radius:10px;
   box-sizing: border-box;
   box-shadow: 0 5px 5px rgb(26, 24, 5);
